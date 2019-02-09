@@ -1,0 +1,25 @@
+{
+    "name": "simple-scss-compiler",
+    "version": "1.0.0",
+    "description": "a simple SCSS compiler using npm scripts",
+    "scripts": {
+        "start": "npm run watch:css",
+        "watch:css": "nodemon -e scss -x \"npm run build:css\"",
+        "build:css": "node-sass --output-style compressed --source-map true -o dist/css src/scss/styles.scss"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/georgewpark/Simple-SCSS-Compiler.git"
+    },
+    "author": "George W. Park",
+    "license": "MIT",
+    "keywords": [
+        "scss",
+        "compiler"
+    ],
+    "devDependencies": {
+        "node-sass": "^4.11.0",
+        "nodemon": "^1.18.10"
+    },
+    "homepage": "https://github.com/georgewpark/Simple-SCSS-Compiler"
+}
