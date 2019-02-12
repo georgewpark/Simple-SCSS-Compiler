@@ -2,7 +2,6 @@
 A simple SCSS compiler using npm scripts.
 
 ## Installation
-
 First run `npm install` to install dependencies.
 
 Then run `npm start` to start compiler and watch files.
